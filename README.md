@@ -1,73 +1,103 @@
-# Welcome to your Lovable project
+# 🌌 Girish | Full Stack Developer
 
-## Project info
+<p align="center">
+  <img src="https://img.shields.io/badge/MERN-Stack-00ffff?style=for-the-badge&logo=mongodb&logoColor=white" />
+  <img src="https://img.shields.io/badge/React-Developer-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
+  <img src="https://img.shields.io/badge/Node.js-Backend-339933?style=for-the-badge&logo=node.js&logoColor=white" />
+</p>
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+---
 
-## How can I edit this code?
+## 🧑‍💻 About This Project
 
-There are several ways of editing your application.
+This is my modern, futuristic portfolio built with performance, clean architecture, and scalability in mind.
 
-**Use Lovable**
+It showcases:
+- 🚀 Featured Projects  
+- ⚡ Smooth Animations  
+- 🎨 Dark Neon UI  
+- 📩 Functional Contact System  
+- 📱 Fully Responsive Design  
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠 Tech Stack
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
+### Frontend
 - React
-- shadcn-ui
-- Tailwind CSS
+- TailwindCSS
+- Framer Motion
+- Lucide Icons
 
-## How can I deploy this project?
+### Backend (Contact API)
+- Node.js
+- Express
+- Nodemailer
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+### Deployment
+- Vercel / Render
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
+## ✨ Features
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+- 💎 Glassmorphism UI
+- 🌌 Neon Gradient Accents
+- 🎬 Scroll Animations
+- 📨 Email Integration
+- 🔒 Secure Form Handling
+- 📱 Mobile Optimized
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+---
+
+## 📂 Featured Projects
+
+### 🔐 Authentication System
+Production-grade auth system with:
+- OTP verification
+- JWT refresh tokens
+- Role-based access control
+
+### 💬 Real-time Chat App
+- WebSockets
+- Typing indicators
+- Read receipts
+
+### 🛒 E-commerce API
+- Scalable REST API
+- Payment integration
+- Redis caching
+
+---
+
+## 📸 Preview
+
+> Add your deployed site screenshot here
+
+---
+
+## 🔗 Live Demo
+
+🌍 [View Portfolio](https://your-domain.com)
+
+---
+
+## 📬 Contact Me
+
+If you'd like to collaborate or hire me:
+
+- 📧 your@email.com
+- 💼 LinkedIn
+- 🐙 GitHub
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
+
+---
+
+<p align="center">
+  Built with ❤️ by Girish
+</p>
