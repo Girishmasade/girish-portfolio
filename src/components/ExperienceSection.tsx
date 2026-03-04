@@ -17,6 +17,19 @@ const experiences = [
     ],
   },
   {
+    role: "Web Development Intern",
+    company: "Internship",
+    period: "2024 – 2025",
+    description:
+      "Gained hands-on experience in web development, working on real-world projects using modern technologies. Learned best practices in coding, version control, and agile workflows while contributing to team projects.",
+    highlights: [
+      "Developed responsive web applications using React and TailwindCSS",
+      "Built RESTful APIs with Node.js and Express",
+      "Collaborated with senior developers on production codebases",
+      "Implemented version control workflows using Git and GitHub",
+    ],
+  },
+  {
     role: "Backend Developer",
     company: "Project-Based Work",
     period: "2023 – 2024",
