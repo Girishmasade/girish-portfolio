@@ -6,9 +6,9 @@ const categories = [
     title: "Frontend",
     skills: [
       { name: "React", level: 92 },
+      { name: "Redux Toolkit (RTK)", level: 85 },
       { name: "Vite", level: 85 },
       { name: "TailwindCSS", level: 90 },
-      { name: "Three.js", level: 65 },
     ],
   },
   {
@@ -29,7 +29,6 @@ const categories = [
     title: "Tools",
     skills: [
       { name: "Git", level: 90 },
-      { name: "Docker", level: 72 },
       { name: "VS Code", level: 95 },
     ],
   },
@@ -54,14 +53,15 @@ const SkillsSection = () => {
           </h2>
         </motion.div>
 
-        <div className="mt-12 grid gap-8 sm:grid-cols-2">
+        <div className="mt-12 grid gap-6 sm:gap-8 grid-cols-1 sm:grid-cols-2">
           {categories.map((cat, ci) => (
             <motion.div
               key={cat.title}
-              className="glass-card p-6"
+              className="glass-card p-5 sm:p-6"
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.1 * ci }}
+              whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}
             >
               <h3 className="font-mono text-sm font-semibold tracking-wider text-primary uppercase">
                 {cat.title}

@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const links = [
   { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
+  { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
   { label: "Contact", href: "#contact" },
 ];
@@ -27,11 +28,11 @@ const Navbar = () => {
     >
       <nav className="section-container flex h-16 items-center justify-between">
         <a href="#home" className="text-lg font-bold tracking-tight text-foreground">
-          G<span className="text-primary">.</span>
+          GM<span className="text-primary">.</span>
         </a>
 
         {/* Desktop */}
-        <ul className="hidden items-center gap-8 md:flex">
+        <ul className="hidden items-center gap-6 lg:gap-8 md:flex">
           {links.map((l) => (
             <li key={l.label}>
               <a

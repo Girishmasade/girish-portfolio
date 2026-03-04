@@ -1,5 +1,4 @@
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Code2, Server, Shield, Zap } from "lucide-react";
 
@@ -28,7 +27,7 @@ const AboutSection = () => {
           </h2>
         </motion.div>
 
-        <div className="mt-12 grid gap-12 lg:grid-cols-2">
+        <div className="mt-12 grid gap-8 sm:gap-12 grid-cols-1 lg:grid-cols-2">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
@@ -36,7 +35,7 @@ const AboutSection = () => {
             className="space-y-5 text-muted-foreground leading-relaxed"
           >
             <p>
-              I'm Girish — a Full Stack Developer specializing in the <strong className="text-foreground">MERN stack</strong>.
+              I'm <strong className="text-foreground">Girish Masade</strong> — a Full Stack Developer specializing in the <strong className="text-foreground">MERN stack</strong>.
               I build robust web applications using <strong className="text-foreground">React</strong>, <strong className="text-foreground">Node.js</strong>,
               and <strong className="text-foreground">MongoDB</strong>, with a focus on delivering real business value through
               clean, maintainable code.
@@ -56,14 +55,18 @@ const AboutSection = () => {
             initial={{ opacity: 0, x: 30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="grid grid-cols-2 gap-4"
+            className="grid grid-cols-1 sm:grid-cols-2 gap-4"
           >
             {highlights.map((h, i) => (
-              <div key={h.title} className="glass-card-hover p-5">
+              <motion.div
+                key={h.title}
+                className="glass-card-hover p-5"
+                whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
+              >
                 <h.icon size={28} className="text-primary" />
                 <h3 className="mt-3 font-semibold text-foreground">{h.title}</h3>
                 <p className="mt-1 text-sm text-muted-foreground">{h.desc}</p>
-              </div>
+              </motion.div>
             ))}
           </motion.div>
         </div>
