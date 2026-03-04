@@ -28,7 +28,7 @@ const Navbar = () => {
     >
       <nav className="section-container flex h-16 items-center justify-between">
         <a href="#home" className="text-lg font-bold tracking-tight text-foreground">
-          GM<span className="text-primary">.</span>
+          Girish M<span className="text-primary">.</span>
         </a>
 
         {/* Desktop */}
