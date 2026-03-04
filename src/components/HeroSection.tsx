@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, ArrowDown } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 import HeroBackground3D from "./HeroBackground3D";
 
 const socials = [
@@ -88,16 +88,6 @@ const HeroSection = () => {
           ))}
         </motion.div>
 
-        <motion.a
-          href="#about"
-          className="absolute bottom-10 left-1/2 -translate-x-1/2 text-muted-foreground transition-colors hover:text-primary"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1, y: [0, 8, 0] }}
-          transition={{ opacity: { delay: 1 }, y: { repeat: Infinity, duration: 2 } }}
-          aria-label="Scroll down"
-        >
-          <ArrowDown size={24} />
-        </motion.a>
       </div>
     </section>
   );
