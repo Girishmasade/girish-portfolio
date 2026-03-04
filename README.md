@@ -86,7 +86,7 @@ Production-grade auth system with:
 
 If you'd like to collaborate or hire me:
 
-- 📧 [gmail](girishmasade22@gmail.com)
+- 📧 [girishmasade22@gmail.com](girishmasade22@gmail.com)
 - 💼 [LinkedIn](https://www.linkedin.com/in/girish-masade-85a084219/)
 - 🐙 [GitHub](https://github.com/Girishmasade)
 
