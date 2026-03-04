@@ -7,22 +7,19 @@ const projects = [
     title: "Authentication System",
     desc: "A production-grade auth system with OTP-based verification, JWT refresh tokens, role-based access control, and secure password hashing. Built with a focus on security best practices.",
     tech: ["Node.js", "Express", "MongoDB", "JWT", "Nodemailer"],
-    live: "#",
-    github: "#",
+    github: "https://github.com/girish",
   },
   {
     title: "Real-time Chat App",
     desc: "Full-featured chat application with real-time messaging via WebSockets, typing indicators, read receipts, and media sharing. Supports private and group conversations.",
     tech: ["React", "Socket.io", "Node.js", "MongoDB", "TailwindCSS"],
-    live: "#",
-    github: "#",
+    github: "https://github.com/girish",
   },
   {
     title: "E-commerce API Backend",
     desc: "Scalable RESTful API for e-commerce with product management, cart system, order processing, payment integration, and admin dashboard endpoints.",
     tech: ["Node.js", "Express", "MongoDB", "Redis", "Stripe API"],
-    live: "#",
-    github: "#",
+    github: "https://github.com/girish",
   },
 ];
 
@@ -45,14 +42,15 @@ const ProjectsSection = () => {
           </h2>
         </motion.div>
 
-        <div className="mt-12 grid gap-6 lg:grid-cols-3">
+        <div className="mt-12 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, i) => (
             <motion.article
               key={project.title}
-              className="glass-card-hover group flex flex-col p-6"
+              className="glass-card-hover group flex flex-col p-5 sm:p-6"
               initial={{ opacity: 0, y: 40 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.15 * i }}
+              whileHover={{ y: -5, transition: { duration: 0.2 } }}
             >
               <div className="mb-4 flex items-center gap-2">
                 <div className="h-2 w-2 rounded-full bg-primary animate-glow-pulse" />
@@ -74,20 +72,15 @@ const ProjectsSection = () => {
                 ))}
               </div>
 
-              <div className="mt-5 flex gap-3">
-                <a
-                  href={project.live}
-                  className="inline-flex items-center gap-1.5 rounded-md bg-primary/10 px-4 py-2 text-sm font-medium text-primary transition-colors hover:bg-primary/20"
-                  aria-label={`Live demo of ${project.title}`}
-                >
-                  <ExternalLink size={14} /> Live Demo
-                </a>
+              <div className="mt-5">
                 <a
                   href={project.github}
-                  className="inline-flex items-center gap-1.5 rounded-md border border-border px-4 py-2 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
-                  aria-label={`GitHub repo for ${project.title}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 rounded-md bg-primary/10 px-4 py-2 text-sm font-medium text-primary transition-colors hover:bg-primary/20"
+                  aria-label={`View ${project.title} on GitHub`}
                 >
-                  <Github size={14} /> Code
+                  <Github size={14} /> View on GitHub
                 </a>
               </div>
             </motion.article>

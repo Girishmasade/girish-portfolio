@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, ArrowDown } from "lucide-react";
+import HeroBackground3D from "./HeroBackground3D";
 
 const socials = [
   { icon: Github, href: "https://github.com/girish", label: "GitHub" },
@@ -10,20 +11,7 @@ const socials = [
 const HeroSection = () => {
   return (
     <section id="home" className="relative flex min-h-screen items-center justify-center overflow-hidden">
-      {/* Background effects */}
-      <div className="pointer-events-none absolute inset-0">
-        <div className="absolute left-1/2 top-1/4 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-neon-cyan/5 blur-[120px]" />
-        <div className="absolute right-1/4 top-1/3 h-[300px] w-[300px] rounded-full bg-neon-blue/5 blur-[100px]" />
-        {/* Grid */}
-        <div
-          className="absolute inset-0 opacity-[0.03]"
-          style={{
-            backgroundImage: `linear-gradient(hsl(var(--neon-cyan) / 0.3) 1px, transparent 1px),
-              linear-gradient(90deg, hsl(var(--neon-cyan) / 0.3) 1px, transparent 1px)`,
-            backgroundSize: "60px 60px",
-          }}
-        />
-      </div>
+      <HeroBackground3D />
 
       <div className="section-container relative z-10 text-center">
         <motion.div
@@ -37,19 +25,21 @@ const HeroSection = () => {
         </motion.div>
 
         <motion.h1
-          className="mx-auto max-w-4xl text-4xl font-bold leading-tight tracking-tight sm:text-5xl md:text-6xl lg:text-7xl"
+          className="mx-auto max-w-4xl text-3xl font-bold leading-tight tracking-tight sm:text-4xl md:text-5xl lg:text-7xl"
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.15 }}
         >
-          Building{" "}
-          <span className="text-gradient">Scalable & Modern</span>
+          Hi, I'm{" "}
+          <span className="text-gradient">Girish Masade</span>
           <br />
-          Web Applications
+          <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-muted-foreground mt-2 block">
+            Building Scalable & Modern Web Applications
+          </span>
         </motion.h1>
 
         <motion.p
-          className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground"
+          className="mx-auto mt-6 max-w-2xl text-base sm:text-lg text-muted-foreground"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
@@ -59,27 +49,27 @@ const HeroSection = () => {
         </motion.p>
 
         <motion.div
-          className="mt-10 flex flex-wrap items-center justify-center gap-4"
+          className="mt-8 sm:mt-10 flex flex-col sm:flex-row flex-wrap items-center justify-center gap-3 sm:gap-4"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.45 }}
         >
           <a
             href="#projects"
-            className="group relative inline-flex items-center gap-2 rounded-lg bg-primary px-8 py-3.5 font-medium text-primary-foreground transition-all hover:shadow-[0_0_30px_hsl(var(--neon-cyan)/0.3)]"
+            className="group relative inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-lg bg-primary px-8 py-3.5 font-medium text-primary-foreground transition-all hover:shadow-[0_0_30px_hsl(var(--neon-cyan)/0.3)]"
           >
             View Projects
           </a>
           <a
             href="#contact"
-            className="neon-border inline-flex items-center gap-2 rounded-lg px-8 py-3.5 font-medium text-foreground transition-all hover:bg-primary/10"
+            className="neon-border inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-lg px-8 py-3.5 font-medium text-foreground transition-all hover:bg-primary/10"
           >
             Hire Me
           </a>
         </motion.div>
 
         <motion.div
-          className="mt-12 flex items-center justify-center gap-5"
+          className="mt-10 sm:mt-12 flex items-center justify-center gap-5"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.6 }}
