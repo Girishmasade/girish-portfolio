@@ -3,9 +3,9 @@ import { Github, Linkedin, Mail } from "lucide-react";
 import HeroBackground3D from "./HeroBackground3D";
 
 const socials = [
-  { icon: Github, href: "https://github.com/girish", label: "GitHub" },
-  { icon: Linkedin, href: "https://linkedin.com/in/girish", label: "LinkedIn" },
-  { icon: Mail, href: "mailto:girish@example.com", label: "Email" },
+  { icon: Github, href: "https://github.com/Girishmasade", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/girish-masade-85a084219/", label: "LinkedIn" },
+  { icon: Mail, href: "mailto:girishmasade22@gmail.com", label: "Email" },
 ];
 
 const HeroSection = () => {

@@ -121,7 +121,7 @@ const ProjectsSection = () => {
         {/* View All Button */}
         <div className="mt-16 text-center">
           <motion.a
-            href="/projects"
+            href="https://github.com/Girishmasade"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="inline-block rounded-full border border-primary/40 px-8 py-3 font-medium text-primary transition hover:bg-primary/10"
