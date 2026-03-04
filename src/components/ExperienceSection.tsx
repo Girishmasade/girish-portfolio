@@ -17,7 +17,7 @@ const experiences = [
     ],
   },
   {
-    role: "Frontend Developer",
+    role: "Backend Developer",
     company: "Project-Based Work",
     period: "2023 – 2024",
     description:
