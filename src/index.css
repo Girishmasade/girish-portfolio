@@ -1,8 +1,11 @@
+/* ✅ Google Font MUST be at top */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+/* ---------------- BASE LAYER ---------------- */
 
 @layer base {
   :root {
@@ -46,9 +49,7 @@
     --font-heading: 'Space Grotesk', sans-serif;
     --font-mono: 'JetBrains Mono', monospace;
   }
-}
 
-@layer base {
   * {
     @apply border-border;
   }
@@ -70,14 +71,18 @@
   ::-webkit-scrollbar {
     width: 6px;
   }
+
   ::-webkit-scrollbar-track {
     background: hsl(0 0% 6%);
   }
+
   ::-webkit-scrollbar-thumb {
     background: hsl(185 100% 50% / 0.3);
     border-radius: 3px;
   }
 }
+
+/* ---------------- COMPONENTS ---------------- */
 
 @layer components {
   .glass-card {
@@ -88,6 +93,7 @@
   .glass-card-hover {
     @apply glass-card transition-all duration-500;
   }
+
   .glass-card-hover:hover {
     border-color: hsl(var(--neon-cyan) / 0.3);
     box-shadow:
@@ -97,12 +103,21 @@
 
   .text-gradient {
     @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(135deg, hsl(var(--neon-cyan)), hsl(var(--neon-blue)));
+    background-image: linear-gradient(
+      135deg,
+      hsl(var(--neon-cyan)),
+      hsl(var(--neon-blue))
+    );
   }
 
   .glow-line {
     @apply h-px w-full;
-    background: linear-gradient(90deg, transparent, hsl(var(--neon-cyan) / 0.5), transparent);
+    background: linear-gradient(
+      90deg,
+      transparent,
+      hsl(var(--neon-cyan) / 0.5),
+      transparent
+    );
   }
 
   .neon-border {
@@ -118,6 +133,8 @@
     font-family: var(--font-mono);
   }
 }
+
+/* ---------------- UTILITIES ---------------- */
 
 @layer utilities {
   .animate-glow-pulse {
