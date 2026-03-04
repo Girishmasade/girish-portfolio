@@ -4,8 +4,8 @@ import { Briefcase, Calendar } from "lucide-react";
 
 const experiences = [
   {
-    role: "MERN Stack Web Developer",
-    company: "Freelance / Self-Employed",
+    role: "Full Stack Developer",
+    company: "Mytek Innovations Pvt Ltd",
     period: "2024 – Present",
     description:
       "Building full-stack web applications using React, Node.js, Express, and MongoDB. Developing secure authentication systems with JWT & OTP, real-time features with Socket.io, and RESTful APIs for e-commerce and SaaS platforms.",
